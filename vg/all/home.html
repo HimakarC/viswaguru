@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body
+        {
+            background-color: #222222;
+            background-size: cover;
+            object-fit: cover;
+        }
+        a:hover
+        {
+            color: lightgreen;
+            border-radius: 10px;
+        }
+        a
+        {
+            color: white;
+            cursor: pointer;
+        }
+        .one:hover
+        {
+            color: orange;
+        }
+        .one
+        {
+            font-size: 75px;
+            padding-left: 90px;
+            padding-top: 90px;
+            font-weight: bold;
+            margin-left: 15%;
+            position: fixed;
+            color: white;
+            cursor: pointer;
+            display: grid;
+        }
+        .two
+        {
+            
+            background-color: #222222;
+            text-align: center;
+            padding-top: 10px;
+            flex-direction: column;
+            position: absolute;
+            margin-left: 65%;
+            width: 25%;
+            font-size: 45px;
+            margin-top: 100px;
+            display: flex;
+            box-shadow: 0px 0px 10px 0px black;
+        }
+        .typewriter {
+            overflow: hidden; 
+            border-right: .15em solid orange; 
+            white-space: nowrap; 
+            margin: 0 auto; 
+            letter-spacing: .15em; 
+            font-size: smaller;
+            animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 78%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: orange; }
+        }
+               
+        .twwo
+        {
+            
+            background-color: #222222;
+            text-align: center;
+            padding-top: 1px;
+            flex-direction: column;
+            position: absolute;
+            margin-left: 65%;
+            width: 25%;
+            font-size: 45px;
+            margin-top: 370px;
+            display: grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p class="typewriter">ViswaGuru</p>
+        <span style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Viswa Guru</span>
+        <span style="font-size: xx-large; padding-left: 150px;">Its all about future Leads</span>
+        <img style="padding-left: 50px; padding-top: 135px; position: absolute;" width="100%" src="all/nohing.jpg">
+    </div>
+    <div class="two">
+        <h6>
+            <span>
+                <a href="home/guru" style="text-decoration: none;">I am a Tutor</a><br>
+            </span><br>
+            <span>
+                <a href="home/student" style="text-decoration: none;">I am a Student</a><br>
+            </span>
+        </h6>
+    </div>
+    <span class="twwo">
+        <h6>
+            <span>
+                <a href="home/colleges" style="text-decoration: none;">Colleges</a><br>
+            </span><br>
+            <span>
+                <a href="home/courses" style="text-decoration: none;">Courses</a><br>
+            </span><br>
+            <span>
+                <a href="home/faculties" style="text-decoration: none;">Faculties</a><br>
+            </span>
+        </h6>
+    </div>
+</body>
+</html>

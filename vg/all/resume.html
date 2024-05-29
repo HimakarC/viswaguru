@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'resumecss.css' %}">
+    <title>Himakar - Portfolio</title>
+</head>
+<body style="background: rgb(9, 9, 222, 0.3);">
+    <header>
+        <div class="container">
+            <h1>HMAKAR C</h1><br>
+            <span>DevOps Engineer</span>
+            <span style="padding-left: 400px;"><a href="/">HOME</a></span>
+            <span style="padding-left: 30px;"><a href="#about">ABOUT</a></span>
+            <span style="padding-left: 30px;"><a href="#skills">SKILLS</a></span>
+            <span style="padding-left: 30px;"><a href="#projects">PROJECTS</a></span>
+            <span style="padding-left: 30px;"><a href="#education">EDUCATION</a></span>
+            <span style="padding-left: 30px;"><a href="#contact">CONTACT</a></span>
+            <span style="padding-left: 30px;"><a href="studentlogin">BACK</a></span>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio! I am a passionate web developer with experience in creating
+                modern and responsive websites. My goal is to make the web a better place through
+                innovative and user-friendly solutions.
+            </p>
+        </div>
+    </section>
+
+    <section class="projects" id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>Python</ul>
+            <ul>C</ul>
+            <ul>Java</ul>
+            <ul>C++</ul>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project Name</h3>
+                <p>Description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id = "education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul>10th</ul>
+            <ul>C</ul>
+            <ul>Java</ul>
+            <ul>C++</ul>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Let's connect! Feel free to reach out via email or social media.</p>
+            <ul class="social-links">
+                <li><a href="#" target="_blank">LinkedIn</a></li>
+                <li><a href="#" target="_blank">GitHub</a></li>
+                <li><a href="mailto:your.email@example.com">Email</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Himakar C. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
