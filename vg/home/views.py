@@ -57,12 +57,15 @@ def resume(request):
 def resumecss(request):
     return render(request, 'resumecss.css')
 
+u = ''
 def loginstudent(request):
     if request.method == 'POST':
         username = request.POST['user']
         password = request.POST['Password']
         re = studentdetails.objects.filter(username=username, password=password).exists()
         if re:
+            global u
+            u = username.capitalize()
             return redirect('studentlogin')
         else:
             messages.info(request, "User doesn't exists.")
@@ -86,7 +89,7 @@ def registerstudent(request):
             return redirect('login')
 
 def studentlogin(request):
-    return render(request, "studentmain.html")
+    return render(request, "studentmain.html", {'u':u})
 
 def login(request):
     return render(request, "login.html")
