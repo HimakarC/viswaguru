@@ -29,10 +29,35 @@
         {
             display: block;
         }
+        .name
+        {
+            overflow: hidden;
+            cursor: pointer;
+            position: inherit;
+            margin-left: 46%;
+            white-space: nowrap;
+            font-size: xx-large;
+            animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite, colorChange 5s infinite;
+        }
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 30%; }
+        }
+        @keyframes colorChange {
+            0% { color: red; }
+            25% { color: blue; }
+            50% { color: green; }
+            75% { color: purple; }
+            100% { color: red; }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #222222; }
+        }
     </style>
 </head>
 <body>
-    <p style="position: inherit; margin-left: 46%; font-size: x-large;">Hi {{u}}</p>
+    <div class = "name">Hi {{u}}</div>
     <span style="font-size: x-large;">
         <span class="dropdown">
             <a class="aaa" style="cursor: pointer;">&#x2630;</a>
