@@ -54,6 +54,20 @@
             from, to { border-color: transparent; }
             50% { border-color: #222222; }
         }
+        .drop
+        {
+            display: none;
+            position: fixed;
+            z-index: 1;
+        }
+        .drop a
+        {
+            display: block;
+        }
+        .dropd:hover .drop
+        {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -68,6 +82,10 @@
         </span>
         <span style="padding: 7px 60px;"><a href="resume">Resume</a></span>
         <span style="margin-left: 65%; padding: 120px;"><a href="/">Home</a></span>
+        <!-- <span class = "dropd">
+            <span class = "aaa" style="cursor: pointer;">Community Poll</span>
+            <div class = "dropc">Yes</div>
+        </span> -->
     </span>
 </body>
 </html>
