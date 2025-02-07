@@ -19,9 +19,5 @@ urlpatterns = [
     path('register', views.register, name="register"),
     path('loginstudent', views.loginstudent, name="loginstudent"),
     path('registerstudent', views.registerstudent, name="registerstudent"),
-    path('details', views.details, name='details'),
-    path('api/studentdetailsview', views.studentdetailsview, name = 'StudentDetailsViewSet'),
-    path('api/gurudetailsview', views.gurudetailsview, name = 'GuruDetailsViewSet'),
-    path('api/createstudent', views.createstudent, name = 'StudentDetailsViewSet'),
-    path('api/createguru', views.createguru, name = 'GuruDetailsViewSet')
+    path('details', views.details, name='details')
 ]
