@@ -100,31 +100,3 @@ def login(request):
 
 def register(request):
     return render(request, "register.html")
-
-@api_view(['GET'])
-def studentdetailsview(req):
-    s = studentdetails.objects.all()
-    ser = StudentDetailsSerializer(s, many = True)
-    return Response(ser.data)
-
-@api_view(['GET'])
-def gurudetailsview(res):
-    s = gurudetails.objects.all()
-    ser = GuruDetailsSerializer(s, many = True)
-    return Response(ser.data)
-
-@api_view(['POST'])
-def createguru(res):
-    s = GuruDetailsSerializer(data=res.data)
-    if s.is_valid():
-        s.save()
-        return Response(s.data, status = status.HTTP_201_CREATED)
-    return Response(s.errors, status = status.HTTP_400_BAD_REQUEST)
-
-@api_view(['POST'])
-def createstudent(res):
-    s = StudentDetailsSerializer(data=res.data)
-    if s.is_valid():
-        s.save()
-        return Response(s.data, status = status.HTTP_201_CREATED)
-    return Response(s.errors, status = status.HTTP_400_BAD_REQUEST)
