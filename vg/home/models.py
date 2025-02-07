@@ -1,4 +1,7 @@
 from django.db import models
+from rest_framework import serializers, viewsets
+from rest_framework.routers import DefaultRouter
+from django.urls import path, include
 
 class studentdetails(models.Model):
     firstname = models.CharField(max_length = 100)
